@@ -3,7 +3,7 @@ var watson = require('watson-developer-cloud');
 //write to a filenamevar fs = require('fs
 var fs = require('fs');
 //word count
-var count = require('word-count');
+
 
 var app = express();
 var bodyParser = require('body-parser');
