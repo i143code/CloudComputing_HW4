@@ -4,6 +4,7 @@ var watson = require('watson-developer-cloud');
 var fs = require('fs');
 //word count
 
+const port = process.env.PORT || 8000;
 
 var app = express();
 var bodyParser = require('body-parser');
@@ -35,6 +36,6 @@ app.post('/data',function(req,res){
 });
 })
 //get the post data
-app.listen(8000,function(){
+app.listen(port,function(){
   console.log('Listening to 8000')
 })
