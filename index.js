@@ -19,7 +19,9 @@ var tone_analyzer = watson.tone_analyzer({
   version_date: '2016-05-19'
 });
 
-
+app.get('/',function(req,res){
+  res.send("Welcome to Tone Analyzer App");
+})
 //crrate a schema to post database
 app.post('/data',function(req,res){
   tone_analyzer.tone({ text:req.body.ashish},
