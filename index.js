@@ -4,7 +4,7 @@ var watson = require('watson-developer-cloud');
 var fs = require('fs');
 //word count
 
-const port = process.env.PORT || 8000;
+var port = process.env.PORT || 8000;
 
 var app = express();
 var bodyParser = require('body-parser');
